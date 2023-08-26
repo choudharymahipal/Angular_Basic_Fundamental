@@ -1,1 +1,43 @@
-<p>two-way-binding works!</p>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Two Way Binding</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Data Binding</li>
+                    <li class="breadcrumb-item active">Two Way Binding</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="far fa-circle nav-icon text-info"></i>
+                            Two Way Binding Example
+                        </h3>
+                    </div>
+                    <div class="card-body pad table-responsive">
+                        <h5>Example:1</h5>
+                        Text Interpolation: <label>{{Interpolation_Text}}</label>
+
+                        <h5>Example:2</h5>
+                        <input type="text" class="form-control form-control-sidebar" value="{{TwoWayText}}" #InputText (keyup)="keyUp(InputText.value)" />
+                        <br>
+                        Input Text: <label>{{TwoWayText}}</label>
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

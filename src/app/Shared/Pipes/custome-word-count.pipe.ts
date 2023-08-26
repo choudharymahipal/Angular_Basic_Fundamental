@@ -5,8 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CustomeWordCountPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: any, args?: any): any {
+    if (value.trim() == "") {
+      return 0;
+    } else {
+      return value.trim().split(/\s+/).length;
+    }
   }
 
 }

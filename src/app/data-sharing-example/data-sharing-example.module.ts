@@ -8,16 +8,18 @@ import { UsingServiceComponent } from './using-service/using-service.component';
 import { UsingSessionComponent } from './using-session/using-session.component';
 import { Child2Component } from './child-to-parent/child2/child2.component';
 import { ChildComponent } from './parent-to-child/child/child.component';
+import { DataSharingExampleComponent } from './data-sharing-example.component';
 
 
 @NgModule({
   declarations: [
-    ChildToParentComponent,
+    DataSharingExampleComponent,
     ParentToChildComponent,
-    UsingServiceComponent,
-    UsingSessionComponent,
+    ChildToParentComponent,
     Child2Component,
-    ChildComponent
+    ChildComponent,
+    UsingServiceComponent,
+    UsingSessionComponent
   ],
   imports: [
     CommonModule,

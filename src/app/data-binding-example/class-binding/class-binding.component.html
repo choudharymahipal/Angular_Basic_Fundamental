@@ -1,1 +1,45 @@
-<p>class-binding works!</p>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Class Binding</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Data Binding</li>
+                    <li class="breadcrumb-item active">Class Binding</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>    
+<section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-warning card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="far fa-circle nav-icon text-warning"></i>
+                                Class Binding Example
+                            </h3>
+                        </div>
+                        <div class="card-body pad table-responsive">
+                            <h5>Example:1</h5>
+                            <p [class.ConditionalCls]="ApplyCondition">Conditional Class</p>
+                            
+                            <h5>Example:2</h5>
+                            <p [class]="MultipleClasses">Multiple Classes</p>
+                            
+                            <h5>Example:3</h5>
+                            <p [ngClass]="ngClassExample()">Use of ngClass</p>
+                            /div>
+                    <!-- /.card -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>

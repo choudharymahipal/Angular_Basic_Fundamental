@@ -1,1 +1,51 @@
 <p>attribute-binding works!</p>
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Attribute Binding</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Data Binding</li>
+                    <li class="breadcrumb-item active">Attribute Binding</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-danger card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="far fa-circle nav-icon text-danger"></i>
+                            Attribute Binding Example
+                        </h3>
+                    </div>
+                    <div class="card-body pad table-responsive">
+                        <h5>Example:1</h5>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th [attr.colspan]="2">Colspan by 2 using Attribute binding</th>
+                                <th>Col2</th>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Date 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                        </table>
+                        <br>
+
+                        <h5>Example:2</h5>
+                        <button [attr.title]="LabelText" class="btn btn-success">Aria Label</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

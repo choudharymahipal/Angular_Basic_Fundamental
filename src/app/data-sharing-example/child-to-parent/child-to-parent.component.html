@@ -1,1 +1,43 @@
-<p>child-to-parent works!</p>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Child to Parent Sharing</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Data Sharing</li>
+                    <li class="breadcrumb-item active">Child to Parent</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-warning card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="far fa-circle nav-icon text-warning"></i>
+                            Child to Parent data sharing Example
+                        </h3>
+                    </div>
+                    <div class="card-body pad table-responsive">
+                        <h5>Example:1</h5>
+                        <div class="childCls">
+                            <h6>Parent Component</h6>
+                            <app-child2 (messageEvent)="receiveMessage($event)"></app-child2>
+                            <p>Message: {{message}}</p>
+                        </div>
+
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

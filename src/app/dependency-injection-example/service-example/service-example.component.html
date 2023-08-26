@@ -1,1 +1,85 @@
-<p>service-example works!</p>
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Service Example</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Dependency Injection</li>
+                    <li class="breadcrumb-item active">Service Example</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-warning card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="far fa-circle nav-icon text-warning"></i>
+                            Service Example
+                        </h3>
+                    </div>
+                    <div class="card-body pad table-responsive">
+                        <h5>Example:1</h5>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Get Data</h3>
+                            </div>
+                            <div class="card-body">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>SrNo</th>
+                                            <th>Title</th>
+                                            <th>Body</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let post of posts;let i=index">
+                                            <td>{{i + 1}}</td>
+                                            <td>{{ post.title.substring(0, 20) | titlecase }}... </td>
+                                            <td>{{ post.body.substring(0, 50) | titlecase}}...</td>
+                                            <td><a href="" (click)="ViewData(post)" data-toggle="modal"
+                                                data-target="#modal-default">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Summary</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color:red;">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td class="boldText">Title</td>
+                        <td>{{title | titlecase}}</td>
+                    </tr>
+                    <tr>
+                        <td class="boldText">Body</td>
+                        <td>{{body | titlecase}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

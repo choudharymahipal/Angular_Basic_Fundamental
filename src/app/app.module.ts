@@ -12,8 +12,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeComponent } from './home/home.component';
+
+//fake datbase
 import { FakeDataService } from './Shared/Services/fake-data.service';
 import { DataStoreService } from './Shared/Services/data-store.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,7 @@ import { DataStoreService } from './Shared/Services/data-store.service';
     SidebarComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

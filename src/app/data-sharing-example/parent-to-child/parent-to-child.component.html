@@ -1,1 +1,43 @@
-<p>parent-to-child works!</p>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Parent to child Sharing</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Data Sharing</li>
+                    <li class="breadcrumb-item active">Parent to child</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-danger card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="far fa-circle nav-icon text-danger"></i>
+                            Parent to child data sharing Example
+                        </h3>
+                    </div>
+                    <div class="card-body pad table-responsive">
+                        <h5>Example:1</h5>
+                        <div class="childCls">
+                            <h6>Parent Component</h6>
+                            <p>Message: {{ParentMsg}}</p>
+                            <button (click)="sendMessage()">Send Message</button>
+                            <br><br>
+                            <app-child [childMessage]="message"></app-child>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

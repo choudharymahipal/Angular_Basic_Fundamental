@@ -1,1 +1,192 @@
-<p>sidebar works!</p>
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a routerLink="/" class="brand-link">
+        <span class="brand-text font-weight-light" translate>Title</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                <!-- Home -->
+                <li class="nav-item">
+                    <a routerLink="/" class="nav-link">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p translate>Home_Menu</p>
+                    </a>
+                </li>
+
+                <li class="nav-header" translate>BF_Title</li>
+
+                <!-- Data Binding -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-puzzle-piece"></i>
+                        <p translate>DataBinding_Menu
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a routerLink="/Data_Binding/Style" class="nav-link">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>Style Binding</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Binding/Class" class="nav-link">
+                                <i class="far fa-circle nav-icon text-warning"></i>
+                                <p>Class Binding</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Binding/Property" class="nav-link">
+                                <i class="far fa-circle nav-icon text-success"></i>
+                                <p>Property Binding</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Binding/TwoWayBinding" class="nav-link">
+                                <i class="far fa-circle nav-icon text-info"></i>
+                                <p>Two Way Binding</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Binding/Attribute" class="nav-link">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>Attribute Binding</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Binding/Event" class="nav-link">
+                                <i class="far fa-circle nav-icon text-warning"></i>
+                                <p>Event Binding</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Data Sharing -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-share"></i>
+                        <p translate>DataSharing_Menu
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a routerLink="/Data_Sharing/P2C" class="nav-link">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>Parent to child</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Sharing/C2P" class="nav-link">
+                                <i class="far fa-circle nav-icon text-warning"></i>
+                                <p>Child to parent</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Sharing/Service" class="nav-link">
+                                <i class="far fa-circle nav-icon text-success"></i>
+                                <p>Using Service</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Data_Sharing/Session" class="nav-link">
+                                <i class="far fa-circle nav-icon text-info"></i>
+                                <p>Using Session</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Dependency Injection -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-check"></i>
+                        <p translate>DI_Menu
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a routerLink="/DependencyInjection/Service" class="nav-link">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>Service Injector</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <!-- Directives -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-paper-plane"></i>
+                        <p translate>Directives_Menu
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a routerLink="/Directives/Structural" class="nav-link">
+                                <i class="far fa-circle nav-icon text-warning"></i>
+                                <p>Structural Directive</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Directives/Attribute" class="nav-link">
+                                <i class="far fa-circle nav-icon text-success"></i>
+                                <p>Attribute Directive</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Directives/Custom" class="nav-link">
+                                <i class="far fa-circle nav-icon text-info"></i>
+                                <p>Custom Directive</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Pipes -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-eye-dropper"></i>
+                        <p translate>Pipes_Menu
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a routerLink="/Pipes/PreDefine" class="nav-link">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>Pre Define Pipes</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a routerLink="/Pipes/Custom" class="nav-link">
+                                <i class="far fa-circle nav-icon text-warning"></i>
+                                <p>Custom Pipes</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- <li class="nav-header">Unit Testing</li>
+
+                <li class="nav-item">
+                    <a routerLink="/" class="nav-link">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>
+                            Home
+                        </p>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>

@@ -8,16 +8,18 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { DataBindingExampleComponent } from './data-binding-example.component';
 
 
 @NgModule({
   declarations: [
-    AttributeBindingComponent,
-    ClassBindingComponent,
-    EventBindingComponent,
+    DataBindingExampleComponent,
+    TwoWayBindingComponent,
     PropertyBindingComponent,
+    ClassBindingComponent,
     StyleBindingComponent,
-    TwoWayBindingComponent
+    AttributeBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     CommonModule,

@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-directive-example',
   templateUrl: './directive-example.component.html',
   styleUrls: ['./directive-example.component.scss']
 })
-export class DirectiveExampleComponent {
+export class DirectiveExampleComponent implements OnInit {
+  constructor(){
+    //
+  }
 
+  ngOnInit(): void {
+    console.log("4.0 Directive Component Loaded.");
+  }
 }

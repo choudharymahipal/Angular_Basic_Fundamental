@@ -1,1 +1,40 @@
-<p>custome-pipes works!</p>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Custom Pipe</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">Pipes</li>
+                    <li class="breadcrumb-item active">Custom Pipe</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-warning card-outline">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="far fa-circle nav-icon text-warning"></i>
+                            Custom Pipe Example
+                        </h3>
+                    </div>
+                    <div class="card-body pad table-responsive">
+                        <h5>Example:1</h5>
+                        <input type="text" class="form-control form-control-sidebar" value="{{Title}}" #InputText (keyup)="keyUp(InputText.value)" />
+                        <p>Text: <label>{{Title}}</label></p>
+                        <p>Word Count: {{Title | customeWordCount}}</p>
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
