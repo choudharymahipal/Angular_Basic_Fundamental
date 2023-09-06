@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'Pipes',
-    loadChildren: () => import('./pipes-example/pipes-example-routing.module').then((m) => m.PipesExampleRoutingModule)
+    loadChildren: () => import('./pipes-example/pipes-example.module').then((m) => m.PipesExampleModule)
   },
   { path: "", component: HomeComponent },
   { path: "", redirectTo: "", pathMatch: "full" },

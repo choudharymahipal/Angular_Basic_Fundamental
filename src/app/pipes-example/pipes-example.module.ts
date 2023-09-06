@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { PipesExampleRoutingModule } from './pipes-example-routing.module';
 import { CustomePipesComponent } from './custome-pipes/custome-pipes.component';
@@ -17,6 +18,7 @@ import { CustomeWordCountPipe } from '../Shared/Pipes/custome-word-count.pipe';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     PipesExampleRoutingModule
   ]
 })
